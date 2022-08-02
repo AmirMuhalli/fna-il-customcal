@@ -11,7 +11,6 @@ import { useDispatch, useSelector } from "react-redux";
 export default function YRPicker(props) {
   const year = useSelector(selectYears);
   const initialId = useSelector(selectYearId);
-  const initialYear = useSelector(selectYears);
   const [yearVal, setYearVal] = useState("");
   const yearRef = useRef("");
 
@@ -36,7 +35,6 @@ export default function YRPicker(props) {
       style={{
         display: "flex",
         flexDirection: "column",
-        // gap: "20.5px",
         textAlign: "center",
         placeItems: "center",
         color: "#ff0008",

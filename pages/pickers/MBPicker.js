@@ -8,12 +8,6 @@ import {
   selectTotal,
   updateValue,
 } from "../../slices/MonthlyBenefitSlice";
-// import {
-//   selectId,
-//   selectTotal,
-//   updateValue,
-//   selectMonthlyBenefitValue,
-// } from "../slices/MonthlyBenefitSlice";
 
 export default function MBPicker(props) {
   const monthly = useSelector(selectMonthlyBenefitValue);
