@@ -1,5 +1,4 @@
 import WheelPicker from "react-simple-wheel-picker";
-
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -62,11 +61,11 @@ export default function MBPicker(props) {
       <WheelPicker
         data={props.data}
         onChange={handleOnMonthChange}
+        selectedID={initialId}
         fontSize={20}
         width={180}
         height={100}
         itemHeight={0.5}
-        selectedID={initialId}
         color="#ffe7e8"
         activeColor="#ff0008"
         backgroundColor="#fff"

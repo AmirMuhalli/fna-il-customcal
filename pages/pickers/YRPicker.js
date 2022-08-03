@@ -52,6 +52,7 @@ export default function YRPicker(props) {
       >
         <p1>PAYOUT PERIOD</p1>
       </div>
+
       <WheelPicker
         data={props.data}
         onChange={handleOnYrChange}
