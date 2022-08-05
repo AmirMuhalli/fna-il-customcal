@@ -1743,6 +1743,11 @@ react-simple-wheel-picker@^1.2.0:
   resolved "https://registry.yarnpkg.com/react-simple-wheel-picker/-/react-simple-wheel-picker-1.2.0.tgz#e974a0256ac215aef5878fd8fd7f6be5d31b4165"
   integrity sha512-+W56p4O8NgWk6ps7521Ca7bpYvvALQvQy4F56z6aj2klX64m1ngiDDsGQY6DwD5T5J0yBy+jr1IDlpYvzkJW/g==
 
+react-wheelpicker@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-wheelpicker/-/react-wheelpicker-1.0.8.tgz#1d74767e99abbc38ba3da9664fde00d0544d2ab4"
+  integrity sha512-KKHb8KyIeTWc6jwTFLYkEcAASHuHRH0K6GdB1v7WYdTN6TWUA6DvTXXIfHvR6Q+gyHwretEOdbfCtTFF9boDUg==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"

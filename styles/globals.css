@@ -16,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+#span {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -23,7 +27,6 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     -ms-overflow-style: none;
-
     color-scheme: dark;
   }
   body {

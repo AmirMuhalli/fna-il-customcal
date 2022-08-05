@@ -74,6 +74,7 @@ export default function PickerScreen() {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
+            // hide scrollbar vertical scrollbar
           }}
         >
           <MBPicker monthChange={monthChange} data={MCBData} />

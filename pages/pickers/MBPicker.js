@@ -42,7 +42,7 @@ export default function MBPicker(props) {
     <div
       style={{
         textAlign: "center",
-        color: "#ff0008",
+        color: "white",
         placeItems: "center",
         padding: "10px",
       }}
@@ -62,6 +62,7 @@ export default function MBPicker(props) {
         data={props.data}
         onChange={handleOnMonthChange}
         selectedID={initialId}
+        titleText="Enter value same as aria-label"
         fontSize={20}
         width={180}
         height={100}

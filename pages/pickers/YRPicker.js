@@ -37,7 +37,7 @@ export default function YRPicker(props) {
         flexDirection: "column",
         textAlign: "center",
         placeItems: "center",
-        color: "#ff0008",
+        color: "white",
         padding: "10px",
       }}
     >
