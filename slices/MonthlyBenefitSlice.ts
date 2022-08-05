@@ -91,14 +91,14 @@ export interface MonthlyBenefitState {
   value: number;
   monthly: number;
   totalValue: number;
-  years: number;
+  years: string;
 }
 
 const initialState: MonthlyBenefitState = {
   value: MCBData.find((item) => item.recommended === true)?.monthlyBenefit || 0,
   monthly: MCBData.find((item) => item.recommended === true)?.monthly || 0,
   totalValue: MCBData.find((item) => item.recommended === true)?.total || 0,
-  years: YRData.find((item) => item.recommended === true)?.value || 0,
+  years: YRData.find((item) => item.recommended === true)?.value || "",
 };
 
 export const monthlyBenefitSlice = createSlice({
@@ -117,7 +117,7 @@ export const monthlyBenefitSlice = createSlice({
         totalValue: action.payload,
       };
     },
-    updateYears: (state, action: { payload: number }) => {
+    updateYears: (state, action: { payload: string }) => {
       return {
         ...state,
         years: action.payload,

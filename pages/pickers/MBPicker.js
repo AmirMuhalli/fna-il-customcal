@@ -14,7 +14,6 @@ export default function MBPicker(props) {
   const initialTotal = useSelector(selectTotal);
 
   const [totalVal, setTotalVal] = useState("");
-  const totalRef = useRef("");
 
   const [monthlyVal, setMonthlyVal] = useState("");
   const monthRef = useRef("");
@@ -36,7 +35,7 @@ export default function MBPicker(props) {
     console.log("MBPicker is >>>", monthlyVal);
     console.log("total in redux is>>", initialTotal);
     console.log("total in MBPicker is >>>", totalVal);
-  }, [monthlyVal, monthly, initialTotal, totalVal]);
+  }, [monthlyVal, monthly, initialTotal, totalVal, props]);
 
   return (
     <div

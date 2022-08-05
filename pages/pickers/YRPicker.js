@@ -28,7 +28,7 @@ export default function YRPicker(props) {
     props.yrChange(year);
     console.log("yearVal in YRPicker redux is>>", year);
     console.log("yearVal in YRPicker is >>>", yearVal);
-  }, [yearVal, year]);
+  }, [yearVal, year, props]);
 
   return (
     <div

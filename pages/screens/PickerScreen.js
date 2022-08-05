@@ -35,13 +35,13 @@ export default function PickerScreen() {
   const yearValNoAlpha = yearVal.replace(/[^0-9]/g, "");
   const monthlyBenefitValNoAlpha = monthlyBenefitVal.replace(/[^0-9]/g, "");
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const computeProceeds = () => {
     const total = yearValNoAlpha * 12 * monthlyBenefitValNoAlpha;
-
     const totalCurrency = total.toLocaleString("en-US", {
       style: "currency",
       currency: "Php",
-      minimumFractionDigits: 0,
+      minimumFractionDigits: 2,
     });
     return totalCurrency;
   };
@@ -53,7 +53,15 @@ export default function PickerScreen() {
     console.log("monthlyVal in PickerScreen >>>", monthlyBenefitValue);
     console.log("totalVal in PickerScreen >>>", totalVal);
     console.log("year in PickerScreen >>>", yearValNoAlpha);
-  }, [monthlyBenefitVal, totalVal, yearVal]);
+  }, [
+    monthlyBenefitVal,
+    monthlyBenefitValue,
+    totalVal,
+    newTotalVal,
+    yearValNoAlpha,
+    yearVal,
+    computeProceeds,
+  ]);
 
   return (
     <div>
@@ -74,7 +82,6 @@ export default function PickerScreen() {
             display: "flex",
             justifyContent: "center",
             alignContent: "center",
-            // hide scrollbar vertical scrollbar
           }}
         >
           <MBPicker monthChange={monthChange} data={MCBData} />
@@ -128,7 +135,7 @@ export default function PickerScreen() {
               {monthlyVal.toLocaleString("en-US", {
                 style: "currency",
                 currency: "Php",
-                minimumFractionDigits: 0,
+                minimumFractionDigits: 2,
               })}
               /month
             </span>
